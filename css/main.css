@@ -1,0 +1,165 @@
+
+
+*{ 
+	margin: 0; 
+	padding: 0; 
+}* 
+
+body { 
+	font: .74em Verdana, Arial, "Trebuchet MS", Tahoma, sans-serif; 
+	line-height: 1.6em; 
+	background: #D0D4D4; 
+	color: #444; 
+}
+
+a {	
+	color: #B60D0A;	
+	background: inherit; 
+	text-decoration: none; 
+}
+a:hover { 
+	color: #808080; 
+	background: inherit;
+}
+
+a.link_to_cv {
+	color: white;
+	text-decoration: underline; 
+}
+
+p { 
+	margin: 0 0 15px 0; 
+}
+h1 { 
+	font: normal 3.7em "Trebuchet MS", Arial, Sans-Serif; 
+	color: #FFFFFF; 
+}
+h2 { 
+	color: #B60D0A; 
+	font: bold 1.6em "Trebuchet MS", Arial, Sans-Serif; 
+	margin: 0 0 12px; 
+	border-bottom: 1px solid #ccc; 
+}
+h2.my_name {
+	color: white;
+	border: hidden;
+	margin: 0; 
+	text-align:right;
+	position:relative;
+	top:10px;
+	left:-20px;
+}
+h2.below_heading {
+	color: white;
+	border: hidden;
+	margin: 10px 0 0 0; 
+	font-size:small;
+}
+h3 { 
+	color: #B60D0A; 
+	font: bold 1.2em "Trebuchet MS", Arial, Sans-Serif; 
+	margin: 20px 0 12px; 
+	border-bottom: 1px solid #ccc; 
+}
+
+#content { width: 960px; margin: 10px auto; background: #fff; padding: 10px; }
+
+#header { 
+	background: #fff url(../images/ski_back.png) 
+	no-repeat; 
+	height: 282px; 
+}
+#header p { 
+	margin: 30px 0 0; 
+	color: #DDEEEE;
+}
+#main_heading { 
+	padding: 40px 0 0 20px;  
+	float: left; 
+	width: 400px; 
+}
+#carrot {
+	margin-top:0px;
+	margin-right:50px;
+	float:right;
+	z-index:1; 
+}
+#carrot_logo {
+	position:relative;
+	top:10px;
+}
+
+.heading_intro { /*sink with .gfc-resultsHeader */
+	min-height: 40px;
+}
+.third { 
+	font-size: .9em;  
+	float: left; 
+	width: 280px; 
+	margin: 0 30px 10px 10px; 
+}
+.cv_body { 
+	font-size: 1.5em;  
+	float: left; 
+	
+	margin: 10px 60px 10px 60px; 
+}
+.cv_list {
+	margin: 10px 0px 10px 60px;
+}
+
+.last { 
+	float: right; 
+	margin: 0 10px 10px 0; 
+}
+
+.more { 
+	border-top: 1px solid #eee; 
+	padding: 5px 0 0 0; 
+}
+.sidebar {
+	background:transparent url(../images/sidetab.png) no-repeat scroll 0px 0px;
+    height:170px;
+    left:0;
+    position:fixed;
+    top:150px;
+    width:40px;
+}  
+.sidebar:hover {
+	background-position:-41px 0px;
+}
+.sidebar a {
+	display:block;
+	height:170px;
+	width:40px;
+}
+
+
+#footer { width: 960px; margin: 15px auto; color: #808080; font-size: .9em; }
+#footer a { color: #444; }
+.right { float: right; text-align: right; font-size: 1em; }
+	#footer .right a { margin: 0 0 0 2px; padding: 3px 10px; }
+	#footer .right a:hover { background: #fff; color: #444; text-decoration: underline; }
+	
+
+/* RSS STYLE INFO */
+
+	/* copy of h2 */
+.gfc-resultsHeader .gfc-title {
+	color: #B60D0A; 
+	font: bold 1.6em "Trebuchet MS", Arial, Sans-Serif; 
+	margin: 0 0 12px; 
+}
+.gfc-resultsHeader { /*sink with heading_intro */
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 45px;
+}
+.gfc-results {
+	padding-top:2em;
+}
+.gfc-result {
+	border-top: 1px solid #eee; 
+}
+.gf-title {
+	padding: 5px 0px 10px 0px;
+}
