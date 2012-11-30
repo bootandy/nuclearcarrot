@@ -14,9 +14,9 @@ function OnLoad() {
   var feedControl = new google.feeds.FeedControl();
 
   // Add two feeds.
-	feedControl.addFeed("http://nuclearcarrot.posterous.com/rss.xml", "Nuclear Carrot Blog <a href='http://nuclearcarrot.posterous.com/rss.xml'> <img alt='rss' src='images/rss-feed.png' /> </a>");
+	feedControl.addFeed("http://nuclearcarrot.posterous.com/rss.xml", "");
   // Draw it.
-  feedControl.setNumEntries(3);
+  feedControl.setNumEntries(2);
   feedControl.draw(document.getElementById("feedControl"));
 }
 
