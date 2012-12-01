@@ -23,9 +23,7 @@
             <header>
                 <div id="header">
                     <div id="logo">
-
-                      <h1><a href="index.html"><img alt="" src="img/logo.png"></a></h1>
-
+                      <a href="index.html"><img alt="" src="img/nc-logo.png" width="220px"></a>
                     </div>
                     <nav>
                         <ul>
@@ -52,7 +50,8 @@
                                      <h1>Andy Boot's website</h1>
 
                                     <div class="separator"></div>
-                                    <div class="home-slide-text">The thoughts and web presence of Andy Boot</div> <a href="#" class="button"><span class="text">See more of it</span></a>
+                                    <div class="home-slide-text">The thoughts and web presence of Andy Boot</div>
+                                    <a href="#" class="button seeOverview"><span class="text">See Overview</span></a>
 
                                 </div>
                                 <div class="banner-img">
@@ -317,6 +316,12 @@
                 $('.backToTop').click(function () {
                     $('html, body').animate({
                         scrollTop: 0
+                    }, 'slow');
+                })
+
+                $('.seeOverview').click(function () {
+                    $('html, body').animate({
+                        scrollTop: 550
                     }, 'slow');
                 })
 

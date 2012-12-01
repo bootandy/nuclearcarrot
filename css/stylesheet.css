@@ -85,7 +85,7 @@ body{ 	background:#f8f4f6 url(../img/bg.jpg) repeat top center;}
 #logo {
 	float:left;
 	display:block;
-	margin:23px 0 0 40px;
+	margin:2px 0 0 30px;
 
 }
 .clear {
@@ -386,6 +386,10 @@ a.blog-icon-ab:hover {
 a.blog-icon-ab:hover h5 { text-decoration:none; color:black;}
 a.blog-icon-ab:hover .intro span { text-decoration:none; color:#333;}
 
+a.blog-icon-ab h3 { text-decoration:none; color:#74726a;}
+a.blog-icon-ab:hover h3 { text-decoration:none; color:black;}
+a.blog-icon-ab:hover .testimonial-text { text-decoration:none; color:black;}
+
 a.blog-icon span{ color:#7b7b77; font-size:13px; font-family:Arial, Helvetica, sans-serif; padding-top:5px;}
 
 a.blog-icon2:hover h5{ text-decoration:none; color:#FF8A00; transition: all 0.2s ease-out;
@@ -420,6 +424,21 @@ a.service-icon:hover figure.service { opacity: 1;
 	-moz-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
 }
+
+figure.client-thumb {  border-bottom:1px dashed #ddd; opacity: 0.7; filter: alpha(opacity=70); transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+}
+a.blog-icon-ab:hover figure.client-thumb { opacity: 1;
+	filter: alpha(opacity=100);
+	transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+}
+
+
 figure.blog { padding-bottom:0px; }
 .blog_notes { margin-right:20px; width:700px; float:right; font-family: 'Droid Serif', serif;}
 .blog_notes h3{font-family: 'Droid Serif', serif; color:#74726a; font-weight:normal; font-size:24px; line-height:30px;}
@@ -803,11 +822,19 @@ li.last form { margin-bottom:0px;}
 .team-social img {
 	margin:0 4px;
 }
-.client-name{
+.client-name {
 	margin:10px 0 10px 128px;
-	font-size:12px;
+	font-size:14px;
 	padding-top:5px;
+	text-decoration:none;
+	font-style: italic;
+	color:#74726a;
 }
+.client-name:hover {
+	text-decoration:none;
+	color:black;
+}
+
 .blogslider-body {
 	width:740px;
 	overflow:hidden;
