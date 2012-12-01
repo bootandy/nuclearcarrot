@@ -755,7 +755,7 @@ li.last form { margin-bottom:0px;}
 	margin-left:-20px;
 	padding-bottom:20px;
 	background:url(../img/btm-line.jpg) repeat-x bottom left;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 	clear:both;
 	min-height:250px;
 }
@@ -839,7 +839,10 @@ h3 {
 	line-height: 32px;
 	margin-top: 10px;
 }
-
+.padded{
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
 
 /* scribble over the google css for the live feed */
 .gfc-result .gf-title {
