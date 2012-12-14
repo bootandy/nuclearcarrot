@@ -47,25 +47,25 @@
                     <div class="slider-body">
                         <ul class="slider-container">
                             <li class="slider-item" id="slider-item-1">
-                                <div class="span5 main1">
+                                <div class="span12 main1">
                                      <h1>Andy Boot's website</h1>
                                     <div class="separator"></div>
                                     <div class="home-slide-text">The thoughts and web presence of Andy Boot</div>
+                                    <div class="home-slide-text">This is my place in cyberspace where I have collated various links, blogs, apps and projects that I have worked on</div>
                                     <a href="#" class="button seeOverview"><span class="text">See Overview</span></a>
                                 </div>
-                                <div class="banner-img">
-                                    <img alt="" src="img/big_home.png" style='padding-right:50px; padding-top:50px;'>
-                                </div>
+
                             </li>
                             <li class="slider-item" id="slider-item-2">
                                 <div class="span5 main1">
                                      <h1>Nuclear Carrot</h1>
 
                                     <div class="separator"></div>
-                                    <div class="home-slide-text">Contains links to my blogs and past projects</div>
+                                    <div class="home-slide-text">Just for fun!</div>
+                                    <div class="home-slide-text">A collection of Nuclear Carrots:</div>
                                 </div>
                                 <div class="banner-img">
-                                    <img alt="Big Logo" src="img/big_home2.png" width='280px' style='padding-right:100px;'>
+                                    <img alt="Big Logo" src="img/logos.png" style='padding-right:50px;'>
                                 </div>
                             </li>
                         </ul>
@@ -292,11 +292,15 @@
                             if (acch < chno) {
                                 acch++;
                                 startSlide(acch);
+                            } else {
+                                acch = 1;
+                                startSlide(acch);
                             }
                             break;
                         case 'slide-right':
                             if (acch <= 1) {
-                                acch = 1;
+                                acch = chno;
+                                startSlide(acch);
                             } else {
                                 acch--;
                                 startSlide(acch);

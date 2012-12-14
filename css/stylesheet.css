@@ -204,6 +204,9 @@ nav ul{
 }
 .home-slide-text {
 	color:#605b5b;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding-top: 0.5em;
 }
 .controls {
 	float: left;
