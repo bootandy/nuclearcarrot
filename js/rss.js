@@ -14,7 +14,7 @@ function OnLoad() {
   var feedControl = new google.feeds.FeedControl();
 
   // Add two feeds.
-	feedControl.addFeed("http://nuclearcarrot.posterous.com/rss.xml", "");
+	feedControl.addFeed("http://nuclearcarrot.blogspot.co.uk//feeds/posts/default", "");
   // Draw it.
   feedControl.setNumEntries(2);
   feedControl.draw(document.getElementById("feedControl"));
