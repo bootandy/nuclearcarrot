@@ -1,1 +1,7 @@
-This is my personal website 
+This is my personal website
+
+Nginx is here:
+/etc/nginx/
+
+This website served from:
+/srv/www/nuclearcarrot.com/nuclearcarrot/
