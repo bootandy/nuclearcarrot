@@ -5,3 +5,11 @@ Nginx is here:
 
 This website served from:
 /srv/www/nuclearcarrot.com/nuclearcarrot/
+
+currently python processes are run manually eg:
+
+workon tornado_sample
+cd ~/tornado_sample/sample
+nohup python app.py
+
+
