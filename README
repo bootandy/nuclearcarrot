@@ -15,3 +15,5 @@ nohup python app.py
 
 Certs from:
 https://certbot.eff.org/#ubuntutrusty-nginx
+cert renew cron:
+cat /etc/cron.d/certbot
