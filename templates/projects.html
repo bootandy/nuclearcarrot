@@ -1,0 +1,142 @@
+{% extends "index.html" %}
+
+{% block extra_head %}
+	<link rel="stylesheet" href="{{ get_url(path="projects2.css", trailing_slash=false) }}">
+{% endblock extra_head %}
+
+{% block content %}
+
+           <div id="main-content">
+
+                <article>
+                  <div class="client-testimonials">
+                    <h2 id="web" class="sideH2">Web Projects</h2>                    <div class="separator"></div>
+                    </div>
+
+                    <div class="row">
+                      <a href="https://www.windowfunctions.com" class='blog-icon-ab projects'>
+                        <figure class="client-thumb">
+                            <img alt="github" src="/img/sql.png" width="120px">
+                        </figure>
+			<h3>Window Functions</h3>
+			<div class="arrow"></div>
+			<div class="testimonial-text">Learn advanced SQL window functions with this quiz</div>
+                      </a>
+                      <a class="client-name" href='https://github.com/bootandy/window_funcs'>code on github</a>
+                    </div>
+
+                    <div class="row">
+                      <a href="http://gist.nuclearcarrot.co.uk" class='blog-icon-ab'>
+                        <figure class="client-thumb">
+                            <img alt="github" src="/img/octocat.png" width="120px">
+                        </figure>
+			<h3>Better Gist Search</h3>
+			<div class="arrow"></div>
+                        <div class="testimonial-text">I organise my Gists by filename and description. The default gist search doesn't search in the filename or the description. This does</div>
+                      </a>
+                      <a class="client-name" href='https://github.com/bootandy/gist_search'>code on github</a>
+                    </div>
+
+		    </article>
+                <article>
+                  <div class="client-testimonials">
+                    <h2 id="web" class="sideH2">Python Projects</h2><div class="separator"></div>
+                  </div>
+
+                    <div class="row">
+                      <a href="https://github.com/bootandy/imps" class='blog-icon-ab'>
+                        <figure class="client-thumb">
+                            <img alt="github" src="/img/imps.gif" width="120px">
+                        </figure>
+			<h3>Imps</h3>
+			<div class="arrow"></div>
+			<div class="testimonial-text">Sorts Python imports</div>
+                      </a>
+                      <a class="client-name" href='https://github.com/bootandy/imps'>code on github</a>
+                    </div>
+
+	        </article>
+
+             <article>
+                  <div class="client-testimonials">
+                    <h2 id="games" class="sideH2">HTML5 Games</h2>
+                    <div class="separator"></div>
+
+                    <div class="row">
+                      <a href="/html5/frantic" target="_blank" class='blog-icon-ab'>
+                        <figure class="client-thumb">
+                            <img alt="frantic" src="/img/frantic.png" width="120px">
+                        </figure>                        <h3>Frantic</h3>
+                        <div class="arrow"></div>
+                        <div class="testimonial-text">Fast paced web shooter. Inspired by Tyrian. <br/>Uses real background images from the Hubble space telescope</div>
+                      </a>
+                      <a class="client-name" href='https://github.com/bootandy/frantic'>code on github</a>
+                    </div>
+
+                    <div class="row">
+                      <a href="/html5/cat-and-mouse" target="_blank" class='blog-icon-ab'>
+                        <figure class="client-thumb">
+                            <img alt="catmouse" src="/img/catmouse.png" width="120px">
+                        </figure>
+                        <h3>Cat &amp; Mouse</h3>
+                        <div class="arrow"></div>
+                        <div class="testimonial-text">Protect the mice - dont let them get eaten.</div>
+                      </a>
+                      <a class="client-name" href='https://github.com/bootandy/cat-and-mouse'>code on github</a>
+                    </div>
+
+                  </div>
+                  <div class="clear"></div>
+                </article>
+
+                <article>
+                  <div class="client-testimonials">
+                    <h2 id='android' class="sideH2">Android Apps</h2>
+                    <div class="separator"></div>
+
+                    <div class="row">
+                      <a href='https://play.google.com/store/apps/details?id=uk.co.busmapper.android.free' class='blog-icon-ab'>
+                        <figure class="client-thumb">
+                            <img alt="busmapper" src="/img/busmapper.png" width="120px">
+                        </figure>
+                        <h3>BusMapper</h3>
+                        <div class="arrow"></div>
+                        <div class="testimonial-text">Mapping London's Buses - Which bus to take &amp; when to leave </div>
+                      </a>
+                    </div>
+
+                    <div class="row">
+                      <a href="https://play.google.com/store/apps/details?id=com.nuclearcarrot" class='blog-icon-ab'>
+                        <figure class="client-thumb">
+                            <img alt="oyster" src="/img/london_skate_notifier.png" width="120px">
+                        </figure>
+                        <h3>London Skate Notifier</h3>
+                        <div class="arrow"></div>
+                        <div class="testimonial-text">Get Notifications of London Street stakes (including when they are rained off)</div>
+                      </a>
+                    </div>
+
+                    <div class="row">
+                      <a href="https://play.google.com/store/apps/details?id=com.nuclearcarrot" class='blog-icon-ab'>
+                        <figure class="client-thumb">
+                            <img alt="oyster" src="/img/oystererrors.png" width="120px">
+                        </figure>
+                        <h3>Oyster Errors</h3>
+                        <div class="arrow"></div>
+                        <div class="testimonial-text">Demystifying London Underground's error codes</div>
+                      </a>
+                    </div>
+                                             <div class="row">
+                      <a href="http://online.barcodebeasties.com/" class='blog-icon-ab'>
+                        <figure class="client-thumb">
+                            <img alt="barcodebeasties" src="/img/barcodebeasties.png" width="120px">
+                        </figure>
+                        <h3>Barcode Beasties</h3>
+                        <div class="arrow"></div>                        <div class="testimonial-text">Generate Pokemon-style monsters from barcodes. Then battle your friends</div>
+                      </a>
+                    </div>
+
+                  </div>
+                  <div class="clear"></div>
+                </article>
+{% endblock content %}

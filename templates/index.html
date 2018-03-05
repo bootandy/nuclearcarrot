@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+      <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="{{ get_url(path="print.css", trailing_slash=false) }}" media="print">
+      <link rel="stylesheet" href="{{ get_url(path="poole.css", trailing_slash=false) }}">
+      <link rel="stylesheet" href="{{ get_url(path="hyde.css", trailing_slash=false) }}">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+      <link rel="stylesheet" href="{{ get_url(path="base.css", trailing_slash=false) }}">
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21221503-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21221503-2');
+</script>
+
+      {% if config.generate_rss %}
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+      {% endif %}
+
+      {% block extra_head %}
+      {% endblock extra_head %}
+    </head>
+
+    <body class="{{ config.extra.hyde_theme }} {% if config.extra.hyde_reverse %}layout-reverse{% endif %}">
+        {% block sidebar %}
+            <div class="sidebar">
+              <p>
+                <a href='/'><img alt="logo" src="/img/logo.png"></a>
+              </p>
+              <h2>The thoughts and web presence of Andy Boot</h2>
+
+              <div class="container">
+                    <div class="sidebar-about">
+                        {% block sidebar_about %}
+                            <a href="{{ config.base_url }}"><h1>{{ config.title }}</h1></a>
+                            {% if config.description %}
+                            <p class="lead">{{config.description}}</p>
+                            {% endif %}
+                        {% endblock sidebar_about %}
+                    </div>
+
+                    <ul class="sidebar-nav">
+                        {% block sidebar_nav %}
+                        {% for link in config.extra.hyde_links %}
+                        <li><a href="{{link.url}}">{{link.name}}</a></li>
+                        {% endfor %}
+                        {% endblock sidebar_nav %}
+                    </ul>
+                </div>
+                <div class="coontainer sidebar-sticky">
+                    <div class="small_links">
+                        <a href="mailto:bootandy@gmail.com">
+                          <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="http://www.github.com/bootandy">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://stackoverflow.com/users/95396/andy-boot">
+                          <i class="fab fa-stack-overflow"></i>
+                        </a>
+                        <a href="http://www.linkedin.com/in/bootandy">
+                          <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="/rss.xml">
+                          <i class="fas fa-rss"></i>
+                        </a>
+                    </div>
+                    <p class='footer_text'>No vegetables were harmed or irradiated in the making of this site</p>
+                </div>
+            </div>
+        {% endblock sidebar %}
+
+        <div class="content container">
+            {% block content %}
+                <div class="posts">
+                    {% for page in section.pages %}
+                      <div class="post">
+                        <h1 class="post-title">
+                          <a href="{{ page.permalink }}">
+                            {{ page.title }}
+                          </a>
+                        </h1>
+
+                        <span class="post-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+                      </div>
+                    {% endfor %}
+                </div>
+            {% endblock content %}
+        </div>
+
+    </body>
+
+</html>

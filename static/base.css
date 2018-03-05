@@ -1,0 +1,60 @@
+body {
+	background:
+	linear-gradient(27deg, #f9f9f9 5px, transparent 5px) 0 5px,
+	linear-gradient(207deg, #f9f9f9 5px, transparent 5px) 10px 0px,
+	linear-gradient(27deg, #fff 5px, transparent 5px) 0px 10px,
+	linear-gradient(207deg, #fff 5px, transparent 5px) 10px 5px,
+	linear-gradient(90deg, #fbfbfb 10px, transparent 10px),
+	linear-gradient(#fdfdfd 25%, #fafafa 25%, #fafafa 50%, transparent 50%, transparent 75%, #f9f9f9 75%, #f9f9f9);
+	background-color: #f9f9f9;
+	background-size: 20px 20px;
+}
+h1 {
+	color: #ec9024;
+}
+a {
+	color: #ec9024;
+}
+.sidebar a {
+	color: #ec9024;
+}
+.sidebar-nav {
+	font-size:1.5em;
+	padding-top: 1em;
+}
+.sidebar h2 {
+	color: white;
+	font-size: 1rem;
+	font-style: italic;
+}
+.small_links {
+	text-align: center;
+}
+.small_links a {
+	font-size: 2em;
+	opacity: .8;
+	color: #ec9024;
+	padding: .2em;
+}
+.small_links a:hover {
+	opacity: 1;
+	text-decoration:none;
+}
+.links a {
+	color: #ec9024;
+	font-size: 3em;
+	opacity: .8;
+	padding: .1em;
+}
+.links a:hover {
+	opacity:1;
+	text-decoration:none;
+}
+.content {
+	margin-left: 20em;
+}
+.footer_text {
+	font-style: italic;
+	font-size: .8em;
+	text-align: center;
+}
