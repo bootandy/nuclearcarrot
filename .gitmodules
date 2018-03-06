@@ -1,0 +1,6 @@
+[submodule "static/html5/frantic"]
+	path = static/html5/frantic
+	url = https://github.com/bootandy/frantic
+[submodule "static/html5/cat-and-mouse"]
+	path = static/html5/cat-and-mouse
+	url = https://github.com/bootandy/cat-and-mouse
