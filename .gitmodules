@@ -1,6 +1,0 @@
-[submodule "content/html5/cat-and-mouse"]
-	path = content/html5/cat-and-mouse
-	url = https://github.com/bootandy/cat-and-mouse
-[submodule "content/html5/frantic"]
-	path = content/html5/frantic
-	url = https://github.com/bootandy/frantic
