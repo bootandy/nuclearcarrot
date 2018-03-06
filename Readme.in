@@ -1,0 +1,16 @@
+My [personal website](www.nuclearcarrot.co.uk)
+
+How 2 to test locally:
+gutenberg serve
+
+
+How 2 deploy the code:
+gutenberg build
+tar -cf pub.tar public/
+sftp ...
+
+ssh ...
+cd /srv/www/nuclearcarrot.com/public/html5
+cp pub.tar .
+tar -C . -xf pub.tar
+
