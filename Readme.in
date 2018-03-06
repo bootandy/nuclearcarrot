@@ -10,7 +10,7 @@ tar -cf pub.tar public/
 sftp ...
 
 ssh ...
-cd /srv/www/nuclearcarrot.com/public/html5
+cd /srv/www/nuclearcarrot.com/
 cp pub.tar .
 tar -C . -xf pub.tar
 

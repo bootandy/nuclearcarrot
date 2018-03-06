@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "http://www.nuclearcarrot.co.uk"
+base_url = "https://www.nuclearcarrot.co.uk"
 
 compile_sass = true
 highlight_code = true
