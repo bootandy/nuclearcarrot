@@ -1,5 +1,5 @@
 +++
-title = "Examinging my old Javascript code"
+title = "Examining my old Javascript code"
 date = 2018-03-06
 +++
 
