@@ -1,5 +1,6 @@
 My [personal website](www.nuclearcarrot.co.uk)
 
+
 How 2 to test locally:
 gutenberg serve
 
@@ -11,6 +12,6 @@ sftp ...
 
 ssh ...
 cd /srv/www/nuclearcarrot.com/
-cp pub.tar .
+cp ~/pub.tar .
 tar -C . -xf pub.tar
 
