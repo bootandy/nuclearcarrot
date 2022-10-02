@@ -1,12 +1,12 @@
-My [personal website](www.nuclearcarrot.co.uk)
+My [personal website](www.nuclearcarrot.co.uk) built on [zola](https://github.com/getzola/zola)
 
 
 How 2 to test locally:
-gutenberg serve
+zola serve
 
 
 How 2 deploy the code:
-gutenberg build
+zola build
 tar -cf pub.tar public/
 sftp ...
 
